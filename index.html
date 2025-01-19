@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Advocacy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc; /* Soft blue background */
+      color: #333; /* Neutral text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      padding: 20px; /* Added padding around the page */
+      box-sizing: border-box; /* Ensures padding doesn't affect layout */
+    }
+
+    /* Ensure everything is responsive */
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #5A8DEE; /* Soft blue color */
+      margin-top: 40px; /* Creates space at the top */
+      margin-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666; /* Slightly darker grey for readability */
+      margin: 5px 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    /* Corrected highlight font size and color */
+    .highlight {
+      font-size: 14px; /* Same size as the first paragraph */
+      font-weight: 600; /* Semi-bold */
+      color: #FF6F61; /* New contrasting color */
+      margin-top: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: #f45b69; /* Contrasting soft red */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e04e5b; /* Slightly darker red for hover */
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #777; /* Soft grey footer text */
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .footer b {
+      font-weight: bold;
+      color: #444; /* Bolder text for emphasis */
+    }
+
+    .flag-icon {
+      font-size: 1.5rem; /* Smaller US flag emoji */
+      margin: 20px 0;
+    }
+
+    /* Mobile-first adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px; /* Smaller font size on mobile */
+      }
+      .button {
+        padding: 10px 20px; /* Adjust button size on mobile */
+        font-size: 14px; /* Smaller button text */
+      }
+      .footer {
+        font-size: 11px; /* Smaller footer text on mobile */
+      }
+      .highlight {
+        font-size: 14px; /* Same size on mobile for the highlight paragraph */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Healthcare is a Human Right.</h1>
+  <p>Literally one click below will open your email app with a pre-populated message to various elected officials encouraging healthcare reform. No reason not to.</p>
+  
+  <button class="button" id="emailButton">Tap here to email your elected officials to encourage healthcare reform</button>
+  <p class="footer">Feel free to edit if you wish, but <b>don't forget to tap send!</b></p>
+
+  <!-- Corrected position for the new paragraph -->
+  <p class="highlight">This project is in its infancy. Features to come include directly writing your state and US representatives, as well as members of local government.</p>
+  <p class="highlight" style="font-weight: normal; color: #333; margin-top: 10px;">In the meantime, please follow and do your best to help the cause elsewhere! Thank you.</p>
+
+  <!-- Smaller American flag emoji -->
+  <div class="flag-icon">🇺🇸</div>
+
+  <p class="footer" style="font-size: 12px; color: #666;">I should probably include that this is for United States citizens and writing letters to elected officials is probably best left to constituents. But what do I know? The internet is free, do what you want.</p>
+
+  <script>
+    document.getElementById("emailButton").addEventListener("click", function() {
+      var emailLink = "mailto:president@whitehouse.gov?bcc=vice.president@whitehouse.gov,info@medicareforall.com&subject=Healthcare%20Reform&body=Dear%20[Recipient],%0A%0AI%20believe%20healthcare%20is%20a%20human%20right...";
+
+      // Try to open the email link in the system's default browser
+      window.location.href = emailLink;
+    });
+  </script>
+</body>
+</html>
