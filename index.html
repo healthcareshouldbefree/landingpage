@@ -25,23 +25,23 @@
       box-sizing: border-box;
     }
 
-    h1 {
-      font-size: 36px; /* Larger title for more impact */
-      color: #3A75A5; /* Darker blue for prominence */
-      margin-top: 40px;
-      margin-bottom: 10px;
-    }
+h1 {
+  font-size: 36px; /* Larger title for more impact */
+  color: #3A75A5; /* Darker blue for prominence */
+  margin-top: 10px; /* Reduced space from the top */
+  margin-bottom: 10px;
+}
 
     p {
-      font-size: 18px; /* Slightly larger paragraph text */
+      font-size: 17px; /* Slightly larger paragraph text */
       color: #444; /* Darker text for better readability */
       margin: 5px 0;
     }
 
     .highlight {
       font-size: 15px; /* Smaller but still noticeable for the project info */
-      font-weight: 600;
-      color: #FF6F61;
+      font-weight: 500;
+      color: #444;
       margin-top: 15px;
     }
 
@@ -99,13 +99,12 @@
 </head>
 <body>
   <h1>Healthcare is a Human Right.</h1>
-  <p><b>HEADS UP</b>: you may need to tap the three dots button at the top right and select <b>Open in browser</b> for the email button to work (actively working on a fix for this).</p>
+  <p><b>HEADS UP</b>: in TikTok you may need to tap the three dots button at the top right and select <b>Open in browser</b> for the email button to work (actively working on a fix for this).</p>
   
-  <button class="button" id="emailButton">Tap here to email your elected officials to encourage healthcare reform with one click</button>
-  <p class="footer"><em>Feel free to edit if you wish, but <b>don't forget to tap send!</b></em></p>
+  <button class="button" id="emailButton">Tap here to email your elected officials about healthcare reform<br><br></b><em style="font-size: 70%;">Feel free to edit if you wish, but <b>don't forget to tap send!</b></em></button>
+  
+  <p class="highlight"><br><br>This project is in its infancy. Features to come include directly writing your state and US representatives, as well as members of local government. In the meantime, please follow and do your best to help the cause elsewhere! Thank you.</p>
 
-  <p class="highlight">This project is in its infancy. Features to come include directly writing your state and US representatives, as well as members of local government.</p>
-  <p class="highlight" style="font-weight: normal; color: #333; margin-top: 10px;">In the meantime, please follow and do your best to help the cause elsewhere! Thank you.</p>
   <p class="footer" style="font-size: 12px; color: #666;">🇺🇸 I should probably include that this is for United States citizens and writing letters to elected officials is probably best left to constituents. But what do I know? The internet is free, do what you want.</p>
 
   <script>
@@ -115,7 +114,6 @@
       window.location.href = emailLink;
     });
   </script>
-  
-  <a href="https://www.google.com" target="_system">Go to Google</a>
+ 
 </body>
 </html>
