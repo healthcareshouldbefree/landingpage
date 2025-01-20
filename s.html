@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Advocacy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc; /* Soft background color */
+      color: #333; /* Neutral text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+    }
+
+    /* Ensure everything is responsive */
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #5A8DEE; /* Soft blue */
+      margin-top: 40px; /* Creates space at the top */
+      margin-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666; /* Subtle grey text */
+      margin: 5px 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: #f45b69; /* Contrasting soft red */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e04e5b; /* Slightly darker hover effect */
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #444;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .footer b {
+      font-weight: bold;
+      color: #333; /* Bolder text for emphasis */
+    }
+
+    /* Mobile-first adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px; /* Smaller font size on mobile */
+      }
+      .button {
+        padding: 10px 20px; /* Adjust button size on mobile */
+        font-size: 14px; /* Smaller button text */
+      }
+      .footer {
+        font-size: 12px; /* Smaller footer text on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Healthcare is a Human Right.</h1>
+  <p>Literally one click below will open your email app with a pre-populated message to various elected officials encouraging healthcare reform. No reason not to.</p>
+  <button class="button" id="emailButton">Tap here to generate email</button>
+  <p class="footer">Feel free to edit if you wish, but <b>don't forget to tap send!</b></p>
+
+  <script>
+    document.getElementById("emailButton").addEventListener("click", function() {
+      var emailLink = "mailto:president@whitehouse.gov?bcc=vice.president@whitehouse.gov,info@medicareforall.com&subject=Healthcare%20Reform&body=Dear%20[Recipient],%0A%0AI%20believe%20healthcare%20is%20a%20human%20right...";
+
+      // Try to open the email link in the system's default browser
+      window.location.href = emailLink;
+    });
+  </script>
+</body>
+</html>
