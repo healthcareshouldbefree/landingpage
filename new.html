@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Advocacy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e3f2fd, #c6dafc); /* Added gradient for depth */
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 36px; /* Larger title for more impact */
+      color: #3A75A5; /* Darker blue for prominence */
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px; /* Slightly larger paragraph text */
+      color: #444; /* Darker text for better readability */
+      margin: 5px 0;
+    }
+
+    .highlight {
+      font-size: 15px; /* Smaller but still noticeable for the project info */
+      font-weight: 600;
+      color: #FF6F61;
+      margin-top: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 16px 35px;
+      font-size: 20px; /* Larger button text */
+      font-weight: bold;
+      color: white;
+      background-color: #f45b69;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e04e5b;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 15px;
+      color: #666;
+    }
+
+    .footer b {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .flag-icon {
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+      .button {
+        padding: 12px 25px;
+        font-size: 18px;
+      }
+      .footer {
+        font-size: 14px;
+      }
+      .highlight {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Healthcare is a Human Right.</h1>
+  <p><b>HEADS UP</b>: you may need to tap the three dots button at the top right and select <b>Open in browser</b> for the email button to work (actively working on a fix for this).</p>
+  
+  <button class="button" id="emailButton">Tap here to email your elected officials to encourage healthcare reform with one click</button>
+  <p class="footer"><em>Feel free to edit if you wish, but <b>don't forget to tap send!</b></em></p>
+
+  <p class="highlight">This project is in its infancy. Features to come include directly writing your state and US representatives, as well as members of local government.</p>
+  <p class="highlight" style="font-weight: normal; color: #333; margin-top: 10px;">In the meantime, please follow and do your best to help the cause elsewhere! Thank you.</p>
+  <p class="footer" style="font-size: 12px; color: #666;">🇺🇸 I should probably include that this is for United States citizens and writing letters to elected officials is probably best left to constituents. But what do I know? The internet is free, do what you want.</p>
+
+  <script>
+    document.getElementById("emailButton").addEventListener("click", function() {
+      var emailLink = "mailto:president@whitehouse.gov?bcc=vice.president@whitehouse.gov,ASH@hhs.gov,director@ahrq.hhs.gov,CMSAdministrator@cms.hhs.gov,NIHinfo@od.nih.gov,FDAOMA@fda.hhs.gov&subject=Please%20Support%20Universal%20Healthcare&body=To%20Whom%20It%20May%20Concern%2C%0A%0AI%E2%80%99m%20writing%20to%20express%20my%20concern%20about%20the%20state%20of%20healthcare%20in%20our%20country.%20Far%20too%20many%20people%20can%E2%80%99t%20afford%20basic%20medical%20care%2C%20and%20even%20those%20with%20insurance%20often%20face%20overwhelming%20bills.%20No%20one%20should%20have%20to%20choose%20between%20getting%20the%20care%20they%20need%20and%20paying%20for%20necessities%20like%20rent%20or%20groceries.%0A%0AUniversal%20healthcare%20works%20in%20many%20other%20countries%2C%20providing%20care%20to%20everyone%20while%20keeping%20costs%20lower%20overall.%20It%E2%80%99s%20frustrating%20to%20see%20the%20U.S.%20fall%20behind%20when%20we%20have%20the%20resources%20to%20create%20a%20system%20that%20works%20better%20for%20everyone.%0A%0AI%20believe%20healthcare%20should%20be%20treated%20as%20a%20basic%20human%20right%2C%20not%20a%20privilege%20tied%20to%20income%20or%20employment.%20A%20universal%20system%20would%20mean%20fewer%20people%20struggling%2C%20fewer%20bankruptcies%2C%20and%20a%20healthier%2C%20more%20productive%20society.%0A%0AI%20urge%20you%20to%20take%20meaningful%20action%20to%20make%20universal%20healthcare%20a%20reality.%20This%20issue%20affects%20all%20of%20us%2C%20and%20it%E2%80%99s%20time%20to%20make%20it%20a%20priority.%0A%0ASincerely%2C%0AA%20concerned%20citizen%20and%20voter";
+
+      window.location.href = emailLink;
+    });
+  </script>
+  
+  <a href="https://www.google.com" target="_system">Go to Google</a>
+</body>
+</html>
